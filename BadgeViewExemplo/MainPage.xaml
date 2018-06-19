@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BadgeViewExemplo"
+             xmlns:badge="clr-namespace:BadgeView.Shared;assembly=BadgeView.Shared"
+             x:Class="BadgeViewExemplo.MainPage" Padding="0,20,0,0">
+
+     <ContentPage.Content>
+        <StackLayout>
+              <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+            <Label HorizontalTextAlignment="Center" Text="Exemplo de badge" />
+            <badge:BadgeView Text="6" BadgeColor="Red" VerticalOptions="Center" HorizontalOptions="End" />
+        </StackLayout>
+        <StackLayout>     
+        <Button x:Name="btnAdicionar" Text="Adicionar Badge" Clicked="btnAdicionar_Clicked"></Button>
+        <Button x:Name="btnRemover" Text="Limpar Badge" Clicked="btnRemover_Clicked"></Button>
+         </StackLayout>
+        </StackLayout>
+      
+     </ContentPage.Content>
+</ContentPage>
